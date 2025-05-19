@@ -1,0 +1,168 @@
+/* تنسيق عام */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    direction: rtl;
+}
+
+/* تنسيق الهيدر */
+header {
+    background-color: #e74c3c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+/* تنسيق القائمة */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #c0392b;
+    padding: 0.5rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f1c40f;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* تنسيق الصور */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.main-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* تنسيق الفوتر */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* تنسيق الروابط */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق الأقسام الخاصة */
+.intro {
+    text-align: center;
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.anime-list article, .manga-list article {
+    display: flex;
+    flex-direction: column;
+}
+
+.sources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* تنسيق للصفحة الصغيرة */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .highlights, .sources {
+        grid-template-columns: 1fr;
+    }
+}
